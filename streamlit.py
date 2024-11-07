@@ -45,13 +45,13 @@ for i in range(1,number_of_payments +1):
             monthly_payments,
             interest_payment,
             remaining_balance,
-            year
+            year,
         ]
     )
 
 df = pd.DataFrame(
     schedule,
-    columns= ["Month","Payment","Principal","Interest","Remaining Balance", "Year"]
+    columns= ["Month","Payment","Principal","Interest","Remaining Balance", "Year"],
 )
 
 st.write("### Payment Schedule")
